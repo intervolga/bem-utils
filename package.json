@@ -1,0 +1,44 @@
+{
+  "name": "@intervolga/bem-utils",
+  "version": "1.0.0",
+  "description": "Utils for BEM loaders",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha --ui tdd test/",
+    "lint": "eslint index.js lib test/index.js test/helpers",
+    "test": "npm run lint && npm run mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intervolga/bem-utils.git"
+  },
+  "keywords": [
+    "bem",
+    "webpack",
+    "utils"
+  ],
+  "author": "Shkarupa Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intervolga/bem-utils/issues"
+  },
+  "homepage": "https://github.com/intervolga/bem-utils#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.4.2"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "README",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@bem/naming": "^2.0.0-6",
+    "bem-naming": "^1.0.1"
+  }
+}
