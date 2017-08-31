@@ -3,6 +3,7 @@ const expect = require('expect.js');
 const fileExist = require('../lib/file-exist');
 const dirExist = require('../lib/dir-exist');
 const firstExist = require('../lib/first-exist');
+const bemDirs = require('../lib/bem-dirs');
 const bemPath = require('../lib/bem-path');
 const dirsExist = require('../lib/dirs-exist');
 
@@ -116,5 +117,17 @@ describe('bem-path', () => {
     const result = bemPath(dep, 'js', 'blocks.common');
     expect(result).to.be(path.join('blocks.common', 'page', '__script',
       '_async', 'page__script_async_yes.js'));
+  });
+});
+
+describe('bem-dirs', () => {
+  it('should resolve dirs as expected', () => {
+    const source = path.join(__dirname, 'cases', 'bemjson-deps',
+      'source.bemdeps.json');
+    const deps = require(source);
+    const result = bemDirs(deps);
+
+    expect(result).to.be.an('array');
+    expect(result.length).to.be(126);
   });
 });
