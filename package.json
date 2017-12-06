@@ -1,6 +1,6 @@
 {
   "name": "@intervolga/bem-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utils for BEM loaders",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@bem/naming": "^2.0.0-6",
-    "bem-naming": "^1.0.1"
+    "@bem/sdk.naming.entity.stringify": "^0.2.2",
+    "@bem/sdk.naming.presets": "0.0.5"
   }
 }
