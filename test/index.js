@@ -116,14 +116,14 @@ describe('bem-path', () => {
 
     const result = bemPath(dep, 'js', 'blocks.common');
     expect(result).to.be(path.join('blocks.common', 'page', '__script',
-      '_async', 'page__script_async_yes.js'));
+        '_async', 'page__script_async_yes.js'));
   });
 });
 
 describe('bem-dirs', () => {
   it('should resolve dirs as expected', () => {
     const source = path.join(__dirname, 'cases', 'bemjson-deps',
-      'source.bemdeps.json');
+        'source.bemdeps.json');
     const deps = require(source);
     const result = bemDirs(deps);
 
