@@ -1,11 +1,11 @@
 {
   "name": "@intervolga/bem-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utils for BEM loaders",
   "main": "index.js",
   "scripts": {
-    "mocha": "mocha --ui tdd test/",
-    "lint": "eslint index.js lib test/index.js test/helpers",
+    "mocha": "mocha --ui bdd test/",
+    "lint": "eslint index.js lib test/index.js",
     "test": "npm run lint && npm run mocha"
   },
   "repository": {
@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/intervolga/bem-utils#readme",
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-google": "^0.7.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "expect.js": "^0.3.1",
-    "mocha": "^3.4.2"
+    "mocha": "^7.0.0"
   },
   "files": [
     "lib",
@@ -38,7 +38,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@bem/sdk.naming.entity.stringify": "^0.2.2",
-    "@bem/sdk.naming.presets": "0.0.5"
+    "@bem/sdk.naming.entity.stringify": "^1.1.2",
+    "@bem/sdk.naming.presets": "^0.2.3"
   }
 }
